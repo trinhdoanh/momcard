@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Happy Women's Day, Mom!</title>
+  <!---->
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -13,23 +14,27 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      padding: 20px;
     }
     .card {
       background-color: white;
-      padding: 30px;
+      padding: 20px;
       border-radius: 15px;
       box-shadow: 0 8px 16px rgba(0,0,0,0.2);
       text-align: center;
+      width: 100%;
       max-width: 400px;
-      transform: scale(1.5); /* Scale the content by 1.5 times */
+      box-sizing: border-box;
     }
     h1 {
       color: #ff4081;
       font-family: 'Georgia', serif;
+      font-size: 1.8rem;
     }
     p {
-      font-size: 18px;
+      font-size: 1rem;
       color: #333;
+      margin: 10px 0;
     }
     .btn {
       padding: 12px 24px;
@@ -38,7 +43,7 @@
       border: none;
       border-radius: 25px;
       cursor: pointer;
-      font-size: 16px;
+      font-size: 1rem;
       transition: background-color 0.3s ease;
     }
     .btn:hover {
@@ -47,6 +52,8 @@
     .card img {
       border-radius: 10px;
       margin-top: 20px;
+      max-width: 100%;
+      height: auto;
     }
     .link-container {
       margin-top: 20px;
@@ -54,6 +61,29 @@
     .link-container a {
       color: blue;
       text-decoration: underline;
+      font-size: 1rem;
+    }
+    @media (max-width: 600px) {
+      body {
+        height: auto;
+        padding: 20px;
+      }
+      .card {
+        padding: 15px;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+      .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+      .link-container a {
+        font-size: 0.9rem;
+      }
     }
   </style>
 </head>
